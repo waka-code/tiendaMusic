@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+$color__gris:rgb(170, 170, 170);
+
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin button {
+    width: 30%;
+    height: 5vh;
+    border-radius:5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+@mixin boxShadow {
+    box-shadow: 15px 15px 30px rgba(207, 205, 205, 0.788),-15px -15px 30px rgb(247, 241, 241);
+}
+.nav__header{color: #fff; background-color: rgb(49, 49, 49); height: 100vh;}
+.nav{@include flex; position:fixed; padding: 10px; width: 100%; background-color: rgb(49, 49, 49);}
+.ul{@include flex; font-size: 18px;}
+.ul ul{padding: 15px; cursor: pointer;}
+.ul ul:hover{color: rgb(48, 133, 155);}
+.nav img{height: 4vh; cursor: pointer;}
+.header{@include flex; top:130px;}
+.texheader{ margin-left: 80px; flex: 30%;}
+.texheader .productnew{letter-spacing: 5px; color: $color__gris;}
+.texheader h2{font-size: 35px; flex-wrap: wrap; margin:15px auto;}
+.texheader button{@include button; margin-top: 15px; background-color: rgb(48, 133, 155);}
+.texheader button:active{color: black; background-color: rgb(175, 232, 236);}
+.header .imgheader {flex: auto;}
+.header .imgheader .header__img{height: 80vh; width: 100%; animation:2s infinite img; margin-top: 55px;}
+@keyframes img {
+    0% {
+       transform: rotateY(20deg);
+      }
+    
+      100% {
+        transform: rotateY(350deg);
+      }
+}
+.nav__header .arrW{text-align: center;}
+.nav__header .arrW .arrow{width:40px; cursor:pointer;}
+.nav__header .arrW .arrow:active{width: 25px;}
+.cart{display: none; width: 50%; height: 15vh; background-color: #fff; position: fixed; margin-right: 50%;}
+.product{@include flex}
+.product{ margin:auto; height: 60vh; width: 80%;}
+.product .product__art{border-top-left-radius: 50px; border-top-right-radius: 50px; width: 25%;  @include boxShadow;}
+.product .product__art img{width: 100%; background-size: cover; height: 30vh;}
+.product .product__art ul img{height: 4vh; width: 2vw; cursor: pointer;}
+.product .product__art ul {color: rgb(48, 133, 155); text-align: center; font-size: 20px;}
+.bocina{text-align: center; @include flex;   @include boxShadow; width: 80%; margin: 40px auto;}
+.bocina .boc img{height: 60vh; width: 100%;}
+.bocina .boc{width: 50%;} 
+.bocina .txtboc {padding: 5px; width: 50%;}
+.bocina .txtboc .boctxt{font-size: 35px;}
+.bocina .txtboc p{color: $color__gris; margin-top: 15px;}
+.bocina .txtboc button{margin-top: 15px; @include button; margin-top: 10px; background-color: rgb(48, 133, 155);}
+.bocina .txtboc button:active{color: black; background-color: rgb(175, 232, 236);}
+.contenedor .zx7{@include flex;  @include boxShadow; width: 80%;
+margin:5% auto; text-align: center;}
+.contenedor .divimg .h3zx7{font-size: 35px;}
+.contenedor .divimg button{@include button; width: 50%; background-color:rgb(48, 133, 155); margin-top: 15px;}
+.contenedor .divimg button:active{color: black; background-color: rgb(175, 232, 236);}
+.zx7 .imgdiv img{height: 50vh; width: 100%; }
+.yx1Earphone{@include flex;width: 80%; margin: auto;  @include boxShadow;}
+.earphone{width: 50%;}
+.earphone img{height: 50vh; width: 100%;}
+.yx1Earphone .txtEarphone{width: 50%; text-align: center;}
+.yx1Earphone .txtEarphone h3{font-size: 35px}
+.yx1Earphone .txtEarphone button{@include button; background-color:rgb(48, 133, 155); margin-top: 10px;}
+.yx1Earphone .txtEarphone button:active{color: black; background-color: rgb(175, 232, 236);}
+.audioDiv{width: 80%; @include boxShadow; @include flex; margin:60px auto;}
+.txtaudio{width: 50%; text-align: center; padding: 5px;}
+.txtaudio h3{font-size: 35px;}
+.txtaudio h3 span{color:rgb(48, 133, 155);}
+.Audioimg{width: 50%;}
+.Audioimg img{width: 100%; height: 60vh;}
+.carruselEarphone{margin:50px auto; }
+.carruselEarphone .earphones{@include flex; height: 50vh;}
+.carruselEarphone .earphones article{transition: all 3s ease; @include boxShadow; width: 30%; height: 35vh; margin: 10px; @include boxShadow(); border-top-left-radius: 50px; border-top-right-radius: 50px;}
+.carruselEarphone .earphones article:hover{transform: scale(0.9);}
+.carruselEarphone .earphones article img{height: 100%; width: 90%;}
+.earphones img{height:5vh; width: 3%; cursor: pointer; margin:auto 15px;}
+.earphones .arrow:active{ transform: scale(0.9);}
+.footer{color: #fff; background-color: rgb(49, 49, 49); }
+.IDfooter{@include flex; padding: 15px; width: 100%;}
+.IDfooter div h3{font-size: 30px;}
+.IDfooter div ul{margin-top: 15px; cursor: pointer;}
+.IDfooter .imgdiv img{cursor: pointer; height: 4vh;}
+.footer .IDfooter div button{@include button; width: 110%; background-color:rgba(48, 134, 155, 0.507); margin-top: 15px;}
+.footer .IDfooter div button:active{color: black; background-color: rgb(175, 232, 236);}
+.Buyproduct{position: relative; background-color: rgba(0, 255, 255, 0.233); width: 50%; height: 80vh;}
+.cartt{display: flex; justify-content: space-around; align-items: center; flex-direction: column; padding: 5px;}
+.cartt a img:active{transform: scale(0.8);}
+.cartt p{font-size: 10px;}
+.product__art .cartt .price{display: flex; justify-content: space-around; align-items: center; }
+.menuham{display: none;}
+.menuResponnsive{display: none;}
+.socialnavv{display: none;}
+.headul{display: none;}

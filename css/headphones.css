@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(49, 49, 49); height: 100vh;
+    color: rgb(126, 211, 233);
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+.filter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.filter
+h1{
+   font-size: 35px;
+   cursor: pointer;
+    
+}
+ 
+.filter
+form{
+    width: 100%;
+    
+}
+
+.filter .search{
+    width: 50%;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.filter form button{
+    width: 10%;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+}
+.filter  form button:active{
+    color: rgb(126, 211, 233);
+    transform: scale(0.9);
+}
+
+h3{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.product{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.prrod__artiiculo{
+    box-shadow: 15px 15px 35px rgb(65, 66, 66),
+    -15px -15px 35px rgba(83, 83, 83, 0.767);
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 2s ease;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.prrod__artiiculo:hover{
+    transform: scale(0.8);
+}
+
+.prrod__artiiculo img{
+    height: 15vh;
+}
+
+.prrod__artiiculo h3{
+    font-size: 15px;
+}

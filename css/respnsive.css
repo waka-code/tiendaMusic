@@ -1,0 +1,108 @@
+@media (max-width: 950px){
+.texheader .btn{
+    width: 50%;
+    font-size: 10px;
+}
+}
+
+@media (max-width: 850px){
+    .nav .Logo{
+        font-size: 30px;
+    }
+    .nav .ul{
+        font-size: 18px;
+    }
+    .header .texheader p{
+       font-size: 10px;
+    }
+    .header .texheader h2{
+        font-size: 25px;
+     }
+     .header .imgheader .header__img{
+         height: 60vh;
+     }
+     .nav__header .arrW .arrow{height: 5vh; margin-top: 80px;}
+
+     .header__body .product .product__art{
+         width: 30%;
+         padding: 8px;
+     }
+     .bocina .txtboc .boctxt{font-size: 25px;}
+     .bocina .txtboc .btn0{font-size: 10px;}
+     .zx7 .divimg .h3zx7{font-size: 25px;}
+     .zx7 .divimg .btn1{font-size: 10px;}
+     .yx1Earphone .txtEarphone h3{font-size: 25px;}
+     .yx1Earphone .txtEarphone .btn2{font-size: 10px;}
+
+     .audioDiv .txtaudio h3{font-size: 25px;}
+     .audioDiv .txtaudio p{font-size: 15px;}
+     .footer .IDfooter div h3{font-size: 25px;}
+     .footer .IDfooter .imgdiv{height: 3vh;}
+     .footer .IDfooter .btn3{width: 70%; font-size: 12px;}
+
+     .filter{flex-direction: column;}
+     .filter .btnSearch{width: 20%;}
+    }
+
+    @media (max-width: 760px){
+        .nav__header{height: 90vh;}
+        .menuSencillo{display: none;}
+        .menuResponnsive{display: flex;
+        justify-content: space-between;
+         align-items: center; padding: 15px;}
+         .menuham{display: block; height: 5vh;}
+      
+
+         .menuNAv{
+            right:0;}
+
+        .nav{
+            transition:all 0.5s ease;
+            height: 100%;
+            overflow: auto;
+            width: 100%;
+            right:0;
+            top: 0%;
+        }
+
+        .menuNAv{
+            right: 100%;
+        }
+
+         .nav .ul{
+          flex-direction: column;
+          line-height: 50px;
+          font-size: 40px;  
+          
+      }
+     
+      .nav .ul a:hover{
+        color: rgb(48, 133, 155); 
+    }
+      .header .texheader{line-height: 35px; text-align: center; margin: 20% auto;}
+      .header .imgheader{display: none;}
+      .header .texheader .productnew{font-size: 20px;}
+      .header .texheader p{font-size: 15px;}
+      .header .texheader h2{font-size: 30px;}
+      .header__body .product{width: 90%;}
+      .bocina .boc img{height:40vh;}
+      .bocina .txtboc button{width: 70%;}
+      .zx7 .divimg button{width: 80%;}
+      .zx7 .imgdiv img{height: 40vh; }
+      .yx1Earphone .txtEarphone button{width: 80%;}
+      .yx1Earphone .earphone img{height:40vh;}
+      .audioDiv .Audioimg img{height: 40vh;}
+      .IDfooter{flex-direction: column; text-align: center;}
+     
+      .carruselEarphone .earphones{display: none; width: 60%; height: 30vh;}
+      .earphones article{width: 100vw;}
+      .socialnavv{display: block; margin: 55px; cursor: pointer;}
+    }
+
+    @media (max-width: 500px){
+        .texheader .btn{
+            width: 50%;
+            font-size: 10px;
+        }
+
+    }
